@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(249, 249, 249);
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(201, 160, 228);
+}
+
+header h2{
+    color: #000;
+    font-family: 'Karma', serif;
+}
+
+.nav{
+    width: 5%;
+    padding: 0 5px;
+}
+
+.new{
+    width: 90%;
+}
+
+.menu {
+    text-align: right;
+}
+
+.menu a{
+    padding: 0 10px;
+    color: #000;
+    font-family: 'Karma', serif;
+    font-weight: bold;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside{
+    flex: 25px;
+    padding: 20px;
+    background-color: rgb(249, 215, 240);
+}
+
+aside h2{
+    text-align: center;
+    line-height: 40px;
+    font-family: 'Karma', serif;
+}
+
+aside p{
+    font-family: 'Karma', serif;
+}
+
+section{
+    flex: 75%;
+    padding: 20px;
+    background-color: rgb(192, 192, 239);
+}
+
+section h2{
+    text-align: center;
+    line-height: 40px;
+    font-family: 'Karma', serif;
+}
+
+section p{
+    font-family: 'Karma', serif;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(200, 168, 222);
+    bottom: 0;
+    position: fixed;
+    font-family: 'Karma', serif;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px){
+    header{
+        text-align: center;
+    }
+    .menu{
+        text-align: center;
+    }
+    .nav{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .new a{
+        padding: 0 20px;
+    }
+
+    aside{
+        order: 1;
+    }
+    section{
+        order: 0;
+    }
+}
